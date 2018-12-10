@@ -38,12 +38,13 @@ public class Sorts {
     for (int i = 1; i < data.length; i++) {
       int current = data[i];
       int newPlace = i;
-      for (int x = i-1; x >= 0; x++) {
+      for (int x = i-1; x > 0; x++) {
         if (data[x] > data[i]) {
           data[x+1] = data[x]; // shifting
           newPlace = x; // where should current be
         }
       }
+      System.out.println(newPlace);
     }
   }
 
