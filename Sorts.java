@@ -34,9 +34,22 @@ public class Sorts {
     }
   }
 
+  public static void insertionSort(int[] data) {
+    for (int i = 1; i < data.length; i++) {
+      int current = data[i];
+      int newPlace = i;
+      for (int x = i-1; x >= 0; x++) {
+        if (data[x] > data[i]) {
+          data[x+1] = data[x]; // shifting
+          newPlace = x; // where should current be
+        }
+      }
+    }
+  }
+
   public static void main(String[] args) {
-    int[] array = {4, 2, 9, 1, 0, -4, 3, 8, 7, 3};
-    Sorts.bubbleSort(array);
+    int[] array = {6,8,9,5,3,10};
+    Sorts.insertionSort(array);
     System.out.println(Arrays.toString(array));
   }
 
