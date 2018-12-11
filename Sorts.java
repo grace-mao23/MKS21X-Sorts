@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class Sorts {
 
+  // find smallest and move to front
   public static void selectionSort(int [] ary) {
     for (int i = 0; i < ary.length; i++) {
       int smallest = i;
@@ -16,6 +17,7 @@ public class Sorts {
     }
   }
 
+  // switches place by place until no swaps made
   public static void bubbleSort(int[] data){
     boolean sorted = false;
     while (!sorted) {
@@ -34,6 +36,7 @@ public class Sorts {
     }
   }
 
+  // looks at each element and "inserts" them into the right place
   public static void insertionSort(int[] data) {
     for (int i = 1; i < data.length; i++) {
       int current = data[i];
