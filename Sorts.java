@@ -43,8 +43,8 @@ public class Sorts {
           data[x+1] = data[x]; // shifting
           newPlace = x; // where should current be
         }
+        data[newPlace] = current;
       }
-      System.out.println(newPlace);
     }
   }
 
