@@ -46,14 +46,6 @@ public class Sorts {
         j--;
       }
       data[j+1] = current;
-  /*    int newPlace = i;
-      for (int x = i - 1; x >= 0; x--) {
-        if (data[x] > current) {
-          data[x+1] = data[x]; // shifting
-          newPlace = x; // where should current be
-        }
-        data[newPlace] = current;
-      } */
     }
   }
 
